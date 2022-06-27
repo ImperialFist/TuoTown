@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>TuoTown by Anatoly </title>
+    <link rel="icon" href="img/logo.svg" type="image/icon type">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header class="header">
+<!-- Modal -->
+<div class="aboutme modal fade" id="myModal">
+    <div class="aboutme__dialog modal-dialog">
+      <div class="aboutme__content modal-content">
+        <div class="aboutme__header modal-header">
+          <h3 class="aboutme__title modal-title" id="exampleModalLabel">Приветствую!</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="aboutme__body modal-body">
+            <p class="aboutme__txt">
+                Меня зовут Анатолий - я начинающий верстальщик и в данный момент ищу работу в этом направлении.
+            
+            </p>
+            <ul class="aboutme-list aboutme__aboutme-list">
+                <li class="aboutme-list__item">
+                    Верстаю по методологии БЭМ (использую БЭМ нэйминг);
+                </li>
+                <li class="aboutme-list__item">
+                    Использую HTML5\CSS3 (в зависимости от проектов использую препроцессоры SASS/SCSS);
+                </li>
+                <li class="aboutme-list__item">
+                    Для разметки и типовых элементов использую Bootstrap;
+                </li>
+                <li class="aboutme-list__item">
+                    Использую JavaScript (избегаю jQuery);
+                </li>
+                <li class="aboutme-list__item">
+                    Верстаю по макетам из Figma, Photoshop;
+                </li>
+            </ul>
+
+            <p class="aboutme__contact"> 
+                С моим резюме можно ознакомитья по ссылке
+                <a href="https://spb.hh.ru/resume/906ba191ff0addc8e80039ed1f4e66396c4832" class="aboutme__link" target="_blank">ссылка на HH</a>
+            </p>
+
+
+        </div>
+        <div class="aboutme__footer modal-footer justify-content-between">
+            <p class="aboutme__this-site align-self-baseline col-8">
+                Конкретно этот сайт я верстал по свободно распространяемому макету в Figma. 
+                <br> Все права принадлежат правообладателю.
+                <br> <span class="aboutme__note">Cайт, кстати, адаптирован :)</span>
+
+            </p>
+          <button type="button" class="btn btn-secondary col-3" data-bs-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        <div class="container-fluid">
+            <div class="nav row d-flex flex-row p-3 justify-content-between justify-content-md-around align-items-center" >
+                <div class="btngrpl col-5 col-md-4 col-xl-3 d-flex flex-row align-items-center justify-content-between">
+                    <a href="#" class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                        <img src="img/sc_header/icon_menu.svg" alt="Menu icon">
+                    </a>
+                    <a class="btngrpl__map-icon" href="#" >
+                        <img src="img/sc_header/icon_map.svg" alt="Map icon>">
+                    </a>
+                    <a class="btngrpl__phone-icon col-2 text-center" href="tel:+89811201117" >
+                        <img src="img/sc_header/icon_ph.svg" alt="Phone icon>">
+                    </a>
+                    <a class="btngrpl__shop-icon col-3 text-center" href="#">
+                        <img src="img/sc_header/icon_shop.svg" alt="Shop icon">
+                    </a>
+                    <a class="btngrpl__number col-8" href="tel:+89811201117" >
+                        8 981 120-11-17
+                    </a>
+                </div>
+                <img src="img/logo.svg" alt="Logo" class="logo col-4">
+                 <div class="btngrpr col-2 d-flex flex-row justify-content-end">
+                    <a class="btngrpr__shop-icon" href="#">
+                        <img src="img/sc_header/icon_shop.svg" alt="Shop icon">
+                    </a>
+                    <a class="btngrpr__mail-icon" href="mailto:">
+                        <img src="img/sc_header/icon_email.svg" alt="Mail icon">
+                    </a>
+                    <a class="btngrpr__search-icon" href="#">
+                        <img src="img/sc_header/icon_search.svg" alt="Search icon">
+                    </a>
+                 </div>
+            </div>
+
+        </div>
+        <!-- Offcanvas -->
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+            <a class="offcanvas-header__close-btn" href="" data-bs-dismiss="offcanvas" aria-label="Close"></a> 
+        </div>
+        <div class="offcanvas-body">
+            <ul class="offcanvas-body__list">
+                <li class="offcanvas-body__list-item">
+                    <a class="offcanvas-body__link" href="#" >
+                        Кухонные ножи TUOTOWN
+                    </a>
+                </li>
+                <li class="offcanvas-body__list-item">
+                    <a class="offcanvas-body__link" href="#" >
+                        Складные ножи TUOTOWN
+                    </a>
+                </li>
+                <li class="offcanvas-body__list-item">
+                    <a class="offcanvas-body__link" href="#" >
+                        Кухонные ножи QXF
+                    </a>
+                </li>
+                <li class="offcanvas-body__list-item">
+                    <a class="offcanvas-body__link" href="#" >
+                        Точильные камни
+                    </a>
+                </li>
+                <li class="offcanvas-body__list-item">
+                    <a class="offcanvas-body__link" href="#" >
+                        Наборы для BBQ
+                    </a>
+                </li>
+                <li class="offcanvas-body__list-item">
+                    <a class="offcanvas-body__link" href="#" >
+                        Кухонные принадлежности
+                    </a>
+                </li>
+                <li class="offcanvas-body__list-item">
+                    <a class="offcanvas-body__link" href="#" >
+                        Туристические товары
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="navlist">
+                <li class="navlist__item">
+                    <a class="navlist__link" href="#" >
+                        Новости 
+                    </a>
+                </li>
+                <li class="navlist__item">
+                    <a class="navlist__link" href="#" >
+                        О компании
+                    </a>
+                </li>
+                <li class="navlist__item">
+                    <a class="navlist__link" href="#" >
+                        Контакты
+                    </a>
+                </li>
+                <li class="navlist__item">
+                    <a class="navlist__link" href="#" >
+                        Как проехать
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+    </header>
+
+    <!-- carousel -->
+    <section class="hero">
+        <div class="container-fluid slider">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">1</button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2">2</button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3">3</button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4">4</button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                        <img src="img/bg_header.png" class="d-block w-100 h-100" alt="Knigf">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="carousel-title text-start">
+                                Исключительное качество без компромиссов
+                            </h1>
+                            <p class="carousel-content text-start">
+                                Ножи «Tuotown» – это главный инструмент поваров и секрет кулинарного мастерства
+                            </p>
+                            <a href="#" class="btn carousel-btn">
+                                Подробнее
+                            </a>
+                        </div>
+                    </div>
+                  <div class="carousel-item">
+                        <img src="img/bg_header.png" class="d-block w-100 h-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="carousel-title text-start">
+                                Исключительное качество без компромиссов
+                            </h1>
+                            <p class="carousel-content text-start">
+                                Ножи «Tuotown» – это главный инструмент поваров и секрет кулинарного мастерства
+                            </p>
+                            <a href="#" class="btn carousel-btn">
+                                Подробнее
+                            </a>
+                        </div>
+                     </div>
+                  <div class="carousel-item">
+                        <img src="img/bg_header.png" class="d-block w-100 h-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="carousel-title text-start">
+                                Исключительное качество без компромиссов
+                            </h1>
+                            <p class="carousel-content text-start">
+                                Ножи «Tuotown» – это главный инструмент поваров и секрет кулинарного мастерства
+                            </p>
+                            <a href="#" class="btn carousel-btn">
+                                Подробнее
+                            </a>
+                        </div>
+                    </div>
+                  <div class="carousel-item">
+                        <img src="img/bg_header.png" class="d-block w-100 h-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="carousel-title text-start">
+                                Исключительное качество без компромиссов
+                            </h1>
+                            <p class="carousel-content text-start">
+                                Ножи «Tuotown» – это главный инструмент поваров и секрет кулинарного мастерства
+                            </p>
+                            <a href="#" class="btn carousel-btn">
+                                Подробнее
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <div class="icon_menu_list d-flex flex-column flex-sm-row justify-content-evenly text-center align-items-center">
+                <div class="col-12 col-sm-2 icon_menu icon_kitchen">
+                    <p class="icontxt">
+                        Кухонные ножи
+                    </p>
+                </div>
+                <div class="col-12 col-sm-2 icon_menu icon_folding">
+                    <p class="icontxt">
+                        Складные ножи
+                    </p>
+                </div>
+                <div class="col-12 col-sm-2 icon_menu icon_sharpen">
+                    <p class="icontxt">
+                        Точилки для ножей
+                    </p>
+                </div>
+                <div class="col-12 col-sm-2 icon_menu icon_acces">
+                    <p class="icontxt">
+                        Аксессуары для кухни
+                    </p>
+                </div>
+            </div>
+            <!-- Main item -->
+            <div class="gallery_items d-flex flex-row flex-wrap justify-content-around justify-content-sm-between">
+                <div class="col-12 col-lg-6 main-item item_link">
+                    <a href="#" class="item_link">
+                        <img src="img/sc_gallery/two_kn.png" alt="" class="main_item_img">
+                    </a>
+                        <div class="main_offer d-flex justify-content-between">
+                            <p class="main_item_offer">
+                                Познакомьтесь с коллекцией ножей TUOTOWN        
+                            </p>
+                            <img src="img/sc_gallery/icon_arrow.svg" alt="arrow right">
+                        </div>
+                </div>
+                <!-- Gallery items -->
+                <div class="col-3 gallery-item item_link">
+                        <div class="action_menu d-flex justify-content-between align-items-center">
+                                <img src="img/+.svg" alt="Add icon" class="add__btn" id="add__btn">
+                            <a href="#">
+                                <img src="img/sc_header/icon_shop.svg" alt="Card icon" class="shop">
+                            </a>
+                        </div>
+                        <a href="" class="item_link">
+                            <img src="img/sc_gallery/examp_1.png" alt="Example 1" class="item_image">
+                        </a>
+                        <div class="item_description">
+                            <p class="item_name">
+                                Складной нож SQ01-B
+                            </p>
+                            <p class="cost new__item">
+                                850 р. 
+                            </p>
+                        </div>
+                </div>
+
+                <div class="col-3 gallery-item item_link">
+                    <div class="action_menu d-flex justify-content-between align-items-center">
+                            <img src="img/+.svg" alt="Add icon" class="add__btn" id="add__btn">
+                        <a href="#">
+                            <img src="img/sc_header/icon_shop.svg" alt="Card icon" class="shop">
+                        </a>
+                    </div>
+                    <a href="" class="item_link">
+                        <img src="img/sc_gallery/examp_2.png " alt="Example 2" class="item_image">
+                    </a>
+                    <div class="item_description">
+                        <p class="item_name">
+                            Складной нож JJ001-TUO-B
+                        </p>
+                        <p class="cost">
+                            12 850 р. 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-3 gallery-item item_link">
+                    <div class="action_menu d-flex justify-content-between align-items-center">
+                            <img src="img/+.svg" alt="Add icon" class="add__btn" id="add__btn">
+                        <a href="#">
+                            <img src="img/sc_header/icon_shop.svg" alt="Card icon" class="shop">
+                        </a>
+                    </div>
+                    <a href="" class="item_link">
+                        <img src="img/sc_gallery/examp_1.png" alt="Example 1" class="item_image">
+                    </a>
+                    <div class="item_description">
+                        <p class="item_name">
+                            Складной нож SQ01-B
+                        </p>
+                        <p class="cost">
+                            850 р. 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-3 gallery-item item_link">
+                    <div class="action_menu d-flex justify-content-between align-items-center">
+                            <img src="img/+.svg" alt="Add icon" class="add__btn" id="add__btn">
+                        <a href="#">
+                            <img src="img/sc_header/icon_shop.svg" alt="Card icon" class="shop">
+                        </a>
+                    </div>
+                    <a href="" class="item_link">
+                        <img src="img/sc_gallery/examp_2.png" alt="Example 2" class="item_image">
+                    </a>
+                    <div class="item_description">
+                        <p class="item_name">
+                            Складной нож JJ001-TUO-B
+                        </p>
+                        <p class="cost">
+                            12 850 р.
+                        </p>
+                    </div>
+                </div>
+                <!-- Instagram item -->
+                <div class="col-3 gallery-item item_link insta__item">
+                    <div class="instagram">  
+                        <a href="#" class="insta__txt">
+                            INSTAGRAM
+                        </a> 
+                    </div>
+                </div>
+
+                <div class="col-3 gallery-item item_link">
+                    <div class="action_menu d-flex justify-content-between align-items-center">
+                            <img src="img/+.svg" alt="Add icon" class="add__btn" id="add__btn">
+                        <a href="#">
+                            <img src="img/sc_header/icon_shop.svg" alt="Card icon" class="shop">
+                        </a>
+                    </div>
+                    <a href="" class="item_link">
+                        <img src="img/sc_gallery/examp_2.png" alt="Example 2" class="item_image">
+                    </a>
+                    <div class="item_description">
+                        <p class="item_name">
+                            Складной нож JJ001-TUO-B
+                        </p>
+                        <p class="cost ">
+                            12 850 р. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="know__first text-center">
+                <h2 >
+                    Узнавайте первым о новинках и новостях
+                </h2>
+                    <input type="email" placeholder="Ваш e-mail" class="email__know">
+                    <button class="btn btn__know" type="button" id="button-addon2">   
+                    </button>
+            </div>
+            <div class="gallery_items d-flex flex-row flex-wrap justify-content-around justify-content-sm-between">
+                <div class="col-3 gallery-item item_link">
+                    <div class="action_menu d-flex justify-content-between align-items-center">
+                            <img src="img/+.svg" alt="Add icon" class="add__btn" id="add__btn">
+                        <a href="#">
+                            <img src="img/sc_header/icon_shop.svg" alt="Card icon" class="shop">
+                        </a>
+                    </div>
+                    <a href="" class="item_link">
+                        <img src="img/sc_gallery/examp_1.png" alt="Example 1" class="item_image">
+                    </a>
+                    <div class="item_description">
+                        <p class="item_name">
+                            Складной нож SQ01-B
+                        </p>
+                        <p class="cost">
+                            850 р. 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-3 gallery-item item_link">
+                    <div class="action_menu d-flex justify-content-between align-items-center">
+                            <img src="img/+.svg" alt="Add icon" class="add__btn" id="add__btn">
+                        <a href="#">
+                            <img src="img/sc_header/icon_shop.svg" alt="Card icon" class="shop">
+                        </a>
+                    </div>
+                    <a href="" class="item_link">
+                        <img src="img/sc_gallery/examp_2.png" alt="Example 2" class="item_image">
+                    </a>
+                    <div class="item_description">
+                        <p class="item_name">
+                            Складной нож JJ001-TUO-B
+                        </p>
+                        <p class="cost ">
+                            12 850 р. 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-3 gallery-item item_link">
+                    <div class="action_menu d-flex justify-content-between align-items-center">
+                            <img src="img/+.svg" alt="Add icon" class="add__btn" id="add__btn">
+                        <a href="#">
+                            <img src="img/sc_header/icon_shop.svg" alt="Card icon" class="shop">
+                        </a>
+                    </div>
+                    <a href="" class="item_link">
+                        <img src="img/sc_gallery/examp_1.png" alt="Example 1" class="item_image">
+                    </a>
+                    <div class="item_description">
+                        <p class="item_name">
+                            Складной нож SQ01-B
+                        </p>
+                        <p class="cost new__item">
+                            850 р. 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-3 gallery-item item_link">
+                    <div class="action_menu d-flex justify-content-between align-items-center">
+                            <img src="img/+.svg" alt="Add icon" class="add__btn" id="add__btn">
+                        <a href="#">
+                            <img src="img/sc_header/icon_shop.svg" alt="Card icon" class="shop">
+                        </a>
+                    </div>
+                    <a href="" class="item_link">
+                        <img src="img/sc_gallery/examp_2.png" alt="Example 2" class="item_image">
+                    </a>
+                    <div class="item_description">
+                        <p class="item_name">
+                            Складной нож JJ001-TUO-B
+                        </p>
+                        <p class="cost ">
+                            12 850 р. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="gallery__border"></div>
+    </section>
+
+    <section class="news">
+        <div class="container">
+            <div class="news__title text-center">
+                <span class="news__title-item">
+                    НОВИНКИ
+                </span>
+                <span class="news__popular-item">
+                    ПОПУЛЯРНОЕ
+                </span>
+            </div>
+
+            <div class="gallery_items d-flex flex-row flex-wrap justify-content-around justify-content-sm-between">
+                <div class="col-3 gallery-item item_link">
+                    <div class="action_menu d-flex justify-content-between align-items-center">
+                            <img src="img/+.svg" alt="Add icon" class="add__btn" id="add__btn">
+                        <a href="#">
+                            <img src="img/sc_header/icon_shop.svg" alt="Card icon" class="shop">
+                        </a>
+                    </div>
+                    <a href="" class="item_link">
+                        <img src="img/sc_gallery/examp_1.png" alt="Example 1" class="item_image">
+                    </a>
+                    <div class="item_description">
+                        <p class="item_name">
+                            Складной нож SQ01-B
+                        </p>
+                        <p class="cost new__item">
+                            850 р. 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-3 gallery-item item_link">
+                    <div class="action_menu d-flex justify-content-between align-items-center">
+                            <img src="img/+.svg" alt="Add icon" class="add__btn" id="add__btn">
+                        <a href="#">
+                            <img src="img/sc_header/icon_shop.svg" alt="Card icon" class="shop">
+                        </a>
+                    </div>
+                    <a href="" class="item_link">
+                        <img src="img/sc_gallery/examp_2.png" alt="Example 2" class="item_image">
+                    </a>
+                    <div class="item_description">
+                        <p class="item_name">
+                            Складной нож JJ001-TUO-B
+                        </p>
+                        <p class="cost new__item">
+                            12 850 р. 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-3 gallery-item item_link">
+                    <div class="action_menu d-flex justify-content-between align-items-center">
+                            <img src="img/+.svg" alt="Add icon" class="add__btn" id="add__btn">
+                        <a href="#">
+                            <img src="img/sc_header/icon_shop.svg" alt="Card icon" class="shop">
+                        </a>
+                    </div>
+                    <a href="" class="item_link">
+                        <img src="img/sc_gallery/examp_1.png" alt="Example 1" class="item_image">
+                    </a>
+                    <div class="item_description">
+                        <p class="item_name">
+                            Складной нож SQ01-B
+                        </p>
+                        <p class="cost new__item">
+                            850 р. 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-3 gallery-item item_link">
+                    <div class="action_menu d-flex justify-content-between align-items-center">
+                            <img src="img/+.svg" alt="Add icon" class="add__btn" id="add__btn">
+                        <a href="#">
+                            <img src="img/sc_header/icon_shop.svg" alt="Card icon" class="shop">
+                        </a>
+                    </div>
+                    <a href="" class="item_link">
+                        <img src="img/sc_gallery/examp_2.png" alt="Example 2" class="item_image">
+                    </a>
+                    <div class="item_description">
+                        <p class="item_name">
+                            Складной нож JJ001-TUO-B
+                        </p>
+                        <p class="cost new__item">
+                            12 850 р. 
+                        </p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="gallery__border"></div>
+    </section>
+
+    <section class="offer">
+        <div class="container">
+            <div class="company offer__company d-flex">
+                <img src="img/offer/meat_cut_1.png" alt="Meat cuting 1" class="company__img col-12 col-sm-6 col-lg-3 h-100 ">
+                <div class="company__txt col-11 col-sm-12 col-sm-6 col-lg-8">
+                    <h2 class="company__title col-9 col-lg-10">
+                        «Tuotown» – легендарные ножи, создающие шедевры
+                    </h2>
+                    <p class="company__descript col-10 col-lg-11">
+                        Компания «Tuotown» – эксклюзивный представитель профессиональных кухонных ножей, изготовленных лучшими мастерами Восточной Азии с применением передового европейского оборудования и современных материалов. Они отличаются идеальным балансом и фантастической остротой. Сочетают в себе вековые традиции и новейшие разработки. Также предлагаем широкий ассортимент сопутствующих товаров.
+                    </p>
+                </div>
+            </div>
+            <div class="offer__knife-story knife-story d-flex">
+                <div class="knife-story__txt d-flex flex-column col-12 col-sm-6 col-lg-9">
+                    <p class="knife-story__descript col-11">
+                        Истинная красота ножа — совершённая функциональность и визуальная гармония. Этот предмет издревле сопутствовал человеку: от зари цивилизации до сегодняшних дней. На протяжении всей истории человечества он был верным помощником, незаменимым инструментом и грозным оружием. Предлагаем изделия Hi-end качества по доступным ценам настоящим ценителям японских ножей.
+                    </p>
+                    <p class="knife-story__descript col-11">
+                        Отличительной чертой нашего интернет-магазина являются уникальные торговые предложения, эксклюзивность продукции, неизменно высокое качество и выгодные цены. Осуществляем продажи элитных японских кухонных ножей для профессионалов и любителей. В обширной ассортиментной линейке представлены изделия для различных потребностей и любого бюджета — от столовых приборов до шеф-ножей.
+                    </p> 
+                    <h3 class="knife-story__title col-11 col-lg-8">
+                        Ножи «Tuotown» – это главный инструмент поваров и секрет кулинарного мастерства
+                    </h3>
+                </div>
+                <img src="img/offer/meat_cut_2.png" alt="Meat cuting 1" class="knife-story__img col-12 col-sm-6 col-lg-3 h-100 ">
+            </div>
+        </div>
+        <div class="gallery__border"></div>
+    </section> 
+
+    <section class="about">
+        <div class="container">
+            <div class="about___information information">
+                <h2 class="information__title">
+                    Всё самое интересное о ножах
+                </h2>
+                <div class="information-items d-flex flex-wrap justify-content-between">
+                    <div class="information-items__item col-12 col-lg-4 item_link">
+                        <a href="#" class="information-items__link">
+                            <img src="img/about/about_1.png" alt="" class="information-items__img">
+                        </a>
+                        <h4 class="information-items__title">
+                            Традиционные виды японских кухонных ножей  
+                        </h4>
+                        <h5 class="information-items__date">
+                            19 мая 2022 21:34
+                        </h5>
+                    </div>           
+                    <div class="information-items__item col-12 col-lg-4 item_link">
+                        <a href="#" class="information-items__link">
+                            <img src="img/about/about_2.png" alt="" class="information-items__img">
+                        </a>
+                        <h4 class="information-items__title">
+                            Всемирная история режущих клинков — взгляд в прошлое 
+                        </h4>
+                        <h5 class="information-items__date">
+                            19 мая 2022 21:34
+                        </h5>
+                    </div>   
+                    <div class="information-items__item col-12 col-lg-4 item_link">
+                        <a href="#" class="information-items__link">
+                            <img src="img/about/about_3.png" alt="" class="information-items__img">
+                        </a>
+                        <h4 class="information-items__title">
+                            Как ухаживать за японскими кухонными ножами? 
+                        </h4>
+                        <h5 class="information-items__date">
+                            19 мая 2022 21:34
+                        </h5>
+                    </div>            
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="infoblock">
+        <div class="container">
+            <div class="infoblocktxt-items infoblock__infoblocktxt-items d-flex justify-content-between">
+                <div class="infoblocktxt-items__item col-12 col-lg-4">
+                    <p class="infoblocktxt-items__logotxt">
+                        легендарные ножи, создающие шедевры
+                    </p>
+                    <p class="infoblocktxt-items__text">
+                        Компания «Tuotown» – эксклюзивный представитель профессиональных кухонных ножей, изготовленных лучшими мастерами Восточной Азии с применением передового европейского оборудования и современных материалов. 
+                    </p>
+                    <p class="infoblocktxt-items__text">
+                        Они отличаются идеальным балансом и фантастической остротой. Сочетают в себе вековые традиции и новейшие разработки. Также предлагаем широкий ассортимент сопутствующих товаров.
+                    </p>
+
+                </div>
+                <div class="infoblocktxt-items__item col-12 col-lg-4">
+                    <h5 class="infoblocktxt-items__title">Информация</h5>
+                    <ul class="information-list infoblocktxt-items__information-list ">
+                        <li class="information-list__item">
+                            <a class="information-list__link" href="#" >
+                            Главная
+                            </a>
+                        </li>
+                        <li class="information-list__item">
+                            <a class="information-list__link" href="#" >
+                            Новости
+                            </a>
+                        </li>
+                        <li class="information-list__item">
+                            <a class="information-list__link" href="#" >
+                            О компании
+                            </a>
+                        </li>
+                        <li class="information-list__item">
+                            <a class="information-list__link" href="#" >
+                            Контакты
+                            </a>
+                        </li>
+                    </ul>
+                    <h5 class="infoblocktxt-items__title">Каталог</h5>
+                    <ul class="information-list infoblocktxt-items__information-list ">
+                        <li class="information-list__item">
+                            <a class="information-list__link" href="#" >
+                            Кухонные ножи
+                            </a>
+                        </li>
+                        <li class="information-list__item">
+                            <a class="information-list__link" href="#" >
+                            Складные ножи
+                            </a>
+                        </li>
+                        <li class="information-list__item">
+                            <a class="information-list__link" href="#" >
+                            Точилки для ножей
+                            </a>
+                        </li>
+                        <li class="information-list__item">
+                            <a class="information-list__link" href="#" >
+                            Аксессуары
+                            </a>
+                        </li>
+                    </ul>
+                    <h5 class="infoblocktxt-items__title socials">Мы в соцсетях</h5>
+                    <ul class="soc-list">
+                          <li class="soc-list__item"> 
+                              <a class="soc-list__facebook" href="#" ></a>
+                          </li>
+                          <li class="soc-list__item">
+                              <a class="soc-list__vkontakte" href="#" ></a>
+                          </li>
+                          <li class="soc-list__item">
+                              <a class="soc-list__instagram" href="#" ></a>
+                          </li>
+                          <li class="soc-list__item">
+                              <a class="soc-list__youtube" href="#" ></a>
+                          </li>
+                    </ul>
+                    
+                </div>
+                    
+                <div class="infoblocktxt-items__item col-12 col-lg-3">
+                    <h5 class="infoblocktxt-items__title">Контактная информация</h5>
+                    <div class="infoblocktxt-items__wrapper d-flex flex-lg-column">
+                        <a class="phonenumber infoblocktxt-items__phonenumber col-12 col-md-3 col-lg-12" href="tel:+79811201117">
+                            +7 (981) 120-11-17
+                        </a>
+                        <a class="email col-12 col-md-3 col-lg-12" href="mailto:tuotown@mail.ru">
+                            tuotown@mail.ru
+                        </a>
+                        <p class="infoblocktxt-items__work-time col-12 col-md-2 col-lg-12">
+                            08:00 — 18:00, ежедневно
+                        </p>
+                        <p class="infoblocktxt-items__address col-12 col-md-4 col-lg-12">
+                            Россия, Москва, МКАД, 19-й километр,вл20с1, вход Ф, 22-68-70
+                        </p>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__copyright">
+                TUOTOWN © 2022 Торговая марка TUOTOWN зарегистрирована. Все права защищены и принадлежат правообладателям. 
+            </p>  
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
